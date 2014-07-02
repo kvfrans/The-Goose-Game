@@ -37,7 +37,16 @@
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    [[OALSimpleAudio sharedInstance] playEffect:@"fart.m4a"];
+    int x = arc4random() % 2;
+    
+    if(x == 0)
+    {
+        [[OALSimpleAudio sharedInstance] playEffect:@"fart.m4a"];
+    }
+    else
+    {
+        [[OALSimpleAudio sharedInstance] playEffect:@"fart2.m4a"];
+    }
     
     score++;
     
