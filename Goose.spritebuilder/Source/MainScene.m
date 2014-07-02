@@ -12,6 +12,9 @@
 {
     CCSprite* _goose;
     CCLabelTTF* _scorelabel;
+    CCPhysicsNode* physics;
+    
+    NSMutableArray* eggs;
     
     int score;
 }
@@ -21,7 +24,10 @@
     if (self = [super init])
     {
         // activate touches on this scene
+        
         self.userInteractionEnabled = TRUE;
+        
+        eggs = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -34,6 +40,17 @@
     _scorelabel.zOrder = 2;
 }
 
+
++(id) scene
+{
+    CCScene *scene = [CCScene node];
+    
+    MainScene *layer = [MainScene node];
+    
+    [scene addChild: layer];
+    
+    return scene;
+}
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -59,6 +76,8 @@
     egg.position = [touch locationInNode:self];
     egg.scale = 0;
     
+    [eggs addObject:egg];
+    
     id scaleuup = [CCActionScaleTo actionWithDuration:1 scale:0.3];
     [self addChild:egg];
     [egg runAction:scaleuup];
@@ -67,6 +86,14 @@
     id scaley = [CCActionScaleTo actionWithDuration:0.3 scale:0.6];
     [_goose runAction:scaley];
 
+}
+
+- (void)update:(CCTime)delta {
+    for(int i = 0; i < [eggs count];i++)
+    {
+        CCSprite* egg = [eggs objectAtIndex:i];
+        egg.position = ccp(egg.position.x,egg.position.y - 3);
+    }
 }
 
 

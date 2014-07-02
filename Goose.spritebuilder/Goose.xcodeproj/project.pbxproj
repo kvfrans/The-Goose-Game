@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD4B58A1964C1D100DF1F9F /* Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD4B5891964C1D100DF1F9F /* Title.m */; };
 		0AE155131964ACC500A7C0D8 /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE155121964ACC500A7C0D8 /* Egg.m */; };
 		0AE155161964AF6800A7C0D8 /* fart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0AE155151964AF6800A7C0D8 /* fart.m4a */; };
 		0AE155181964B03400A7C0D8 /* fart2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0AE155171964B03400A7C0D8 /* fart2.m4a */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD4B5881964C1D100DF1F9F /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Title.h; sourceTree = "<group>"; };
+		0AD4B5891964C1D100DF1F9F /* Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Title.m; sourceTree = "<group>"; };
 		0AE155111964ACC500A7C0D8 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
 		0AE155121964ACC500A7C0D8 /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Egg.m; sourceTree = "<group>"; };
 		0AE155151964AF6800A7C0D8 /* fart.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fart.m4a; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				0AD4B5881964C1D100DF1F9F /* Title.h */,
+				0AD4B5891964C1D100DF1F9F /* Title.m */,
 				0AE155111964ACC500A7C0D8 /* Egg.h */,
 				0AE155121964ACC500A7C0D8 /* Egg.m */,
 			);
@@ -339,6 +344,7 @@
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				0AE155131964ACC500A7C0D8 /* Egg.m in Sources */,
+				0AD4B58A1964C1D100DF1F9F /* Title.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
